@@ -95,7 +95,7 @@ vboxmanage storageattach $vm_name \
   --device 0 \
   --type dvddrive \
   --medium "$installation_image"
-echo "Created cdrom drive for $vm_name: $disk_size MB, mounted image $installation_image"
+echo "Created cdrom drive for $vm_name: mounted image $installation_image"
 
 echo "Next steps"
 echo "Start vm without GUI: vboxmanage startvm $vm_name --type=headless"
