@@ -22,10 +22,7 @@ vboxmanage modifyvm $vm_name --memory $memory \
   --audiocodec stac9221 \
   --audioout on \
   --pae off \
-  --usbohci on \
-  --vrde on \
-  --nic1 nat \
-  --cableconnected1 on
+  --usbohci on
 
 #vrde is for remote desktop server
 vboxmanage modifyvm $vm_name --vrde on
