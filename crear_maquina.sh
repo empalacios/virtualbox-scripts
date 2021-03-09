@@ -105,4 +105,5 @@ echo "Remove Installation image from CDROM: vboxmanage storageattach $vm_name --
 echo "Add image to CDROM Drive:             vboxmanage storageattach $vm_name --storagectl 'IDE Controller' --port 0 --device 0 --type dvddrive --medium <imagepath>"
 echo "Remove CDROM Drive:                   vboxmanage storagectl $vm_name --name 'IDE Controller' --remove"
 echo "Add Bidirectional Clipboard:          vboxmanage controlvm $vm_name clipboard bidirectional"
+echo "Add a Shared Folder:                  vboxmanage sharedfolder add $vm_name --name <sharename> --hostpath <folder_dir>"
 echo "Disconnect from network:              vboxmanage modifyvm $vm_name --nic1 null --cableconnected1 off"
